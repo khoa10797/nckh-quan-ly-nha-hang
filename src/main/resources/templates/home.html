@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+    <link rel="stylesheet" th:href="@{/css/bulma.css}">
+</head>
+<body>
+
+<div id="headerHome" class="hero">
+    <!-- navbar trang chủ -->
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+        <div id="divChildNav" class="container">
+            <!-- logo navbar -->
+            <div class="navbar-brand">
+                <a href=""><img src="image/android-9-pie-logo.png" width="150px"></a>
+                <a role="button" class="navbar-burger" data-target="navbarMenu" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <!-- danh sách các item trong navbar -->
+            <div id="navbarMenu" class="navbar-menu">
+                <!-- bên trái navbar -->
+                <div class="navbar-start">
+
+                </div>
+                <!-- bên phải navbar -->
+                <div class="navbar-end">
+                    <a href="" class="navbar-item">Gọi món</a>
+                    <a href="" class="navbar-item">Đăng nhập</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="bannerHome" class="container has-text-centered">
+
+        <div id="containSlogan">
+            <span>Thực phẩm sạch</span>
+            <span>cho bữa ăn ngon miệng!</span>
+        </div>
+
+        <div>
+            <button class="button-banner">ĐẶT BÀN</button>
+            <button class="button-banner">XEM THỰC ĐƠN</button>
+        </div>
+
+    </div>
+
+</div>
+
+<script th:src="@{/js/index.js}"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+/* home */
+#headerHome {
+    background-image: url(/image/hinh-nen.jpg);
+    background-position: center;
+    height: 820px;
+    justify-content: initial !important;
+}
+
+#divChildNav {
+    margin-top: 20px;
+}
+
+#bannerHome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#containSlogan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#containSlogan span{
+    color: #cccccc;
+    font-size: 72px;
+    font-family: Georgia;
+}
+
+.button-banner{
+    background: none;
+    color: white;
+    width: 160px;
+    height: 40px;
+    margin: 20px;
+    border: 2px solid white;
+}
+
+.button-banner:hover{
+    background-color: #333333;
+    opacity: 0.75;
+    border: none;
+}
