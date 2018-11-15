@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Trang chủ</title>
-    <link rel="stylesheet" th:href="@{/css/style.css}"/>
-    <link rel="stylesheet" th:href="@{/css/bulma.css}">
+    <header th:insert="header.html"></header>
 </head>
 <body>
 
@@ -30,7 +29,7 @@
                 <!-- bên phải navbar -->
                 <div class="navbar-end">
                     <a href="" class="navbar-item">Gọi món</a>
-                    <a href="" class="navbar-item">Đăng nhập</a>
+                    <a href="/dang-nhap" class="navbar-item">Đăng nhập</a>
                 </div>
             </div>
         </div>
@@ -50,6 +49,59 @@
 
     </div>
 
+</div>
+
+<div id="bodyHome" class="container">
+
+    <div class="columns child-body-home">
+        <div class="column">
+            <div class="content-strip">
+                <p>ĐÔNG - TÂY KẾT HỢP</p>
+                <span>
+                        <i>Chúng tôi mang đến cho bạn những bữa ăn thơm ngon, giàu dinh dưỡng đa dạng về chủng loại từ
+                            phương Đông đến phương Tây để bạn thỏa sức lựa chọn - chắc chắn không làm bạn thất vọng.</i>
+                    </span>
+                <br>
+                <a href=""><i>Đặt bàn ngay >></i></a>
+            </div>
+        </div>
+        <div class="column">
+            <img src="image/hinh-mau-1.jpg">
+        </div>
+    </div>
+
+    <div class="columns child-body-home">
+        <div class="column">
+            <img src="image/hinh-mau-2.jpg">
+        </div>
+        <div class="column">
+            <div class="content-strip">
+                <p>HƯƠNG VỊ CỦA THIÊN NHIÊN</p>
+                <span>
+                        <i>Với nguồn nguyên liệu tươi ngon, đảm bảo vệ sinh an toàn thực phẩm, những món ăn mà chúng
+                            tôi đem lại sẽ để lại cho bạn hương vị đậm đà khó quên - Đảm bảo ăn là nhớ!</i>
+                    </span>
+                <br>
+                <a href=""><i>Xem thực đơn >></i></a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer" th:fragment="footer">
+    <div class="container">
+        <p class="title is-4">VỀ CHÚNG TÔI</p>
+        <p><b>Địa chỉ:</b> số 3 phố Cầu Giấy, phường Láng Thượng, quận Đống Đa, thành phố Hà Nội</p>
+        <p><b>Điện thoại:</b> 0345678910</p>
+    </div>
+
+    <div class="has-text-centered">
+        <br>
+        <br>
+        <br>
+        <p><i>Nghiên cứu khoa học sinh viên - 2019</i></p>
+    </div>
 </div>
 
 <script th:src="@{/js/index.js}"></script>

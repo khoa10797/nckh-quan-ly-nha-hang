@@ -1,13 +1,19 @@
+html, body{
+    height: 100%;
+}
+
 /* home */
+
 #headerHome {
     background-image: url(/image/hinh-nen.jpg);
     background-position: center;
-    height: 820px;
+    height: 720px;
     justify-content: initial !important;
 }
 
 #divChildNav {
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #bannerHome{
@@ -42,4 +48,28 @@
     background-color: #333333;
     opacity: 0.75;
     border: none;
+}
+
+.child-body-home{
+    margin-bottom: 100px !important;
+    margin-top: 100px !important;
+}
+
+.content-strip{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-strip p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* login */
+
+.hero.is-success{
+    background-color: white !important;
 }
