@@ -1,9 +1,8 @@
 <!doctype html>
 <html lang="vi" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
     <title>Trang chủ</title>
-    <header th:insert="header.html"></header>
+    <header th:insert="layout :: head"></header>
 </head>
 <body>
 
@@ -29,7 +28,7 @@
                 <!-- bên phải navbar -->
                 <div class="navbar-end">
                     <a href="" class="navbar-item">Gọi món</a>
-                    <a href="/dang-nhap" class="navbar-item">Đăng nhập</a>
+                    <a href="/login" class="navbar-item">Đăng nhập</a>
                 </div>
             </div>
         </div>
@@ -89,20 +88,7 @@
 
 </div>
 
-<div class="footer" th:fragment="footer">
-    <div class="container">
-        <p class="title is-4">VỀ CHÚNG TÔI</p>
-        <p><b>Địa chỉ:</b> số 3 phố Cầu Giấy, phường Láng Thượng, quận Đống Đa, thành phố Hà Nội</p>
-        <p><b>Điện thoại:</b> 0345678910</p>
-    </div>
-
-    <div class="has-text-centered">
-        <br>
-        <br>
-        <br>
-        <p><i>Nghiên cứu khoa học sinh viên - 2019</i></p>
-    </div>
-</div>
+<footer th:replace="layout :: footer"></footer>
 
 <script th:src="@{/js/index.js}"></script>
 </body>
