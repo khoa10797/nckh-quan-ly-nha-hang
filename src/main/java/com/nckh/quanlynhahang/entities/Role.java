@@ -5,16 +5,16 @@ import java.io.Serializable;
 import java.util.Set;
 
 @Entity
-@Table(name = "role")
+@Table(name = "_role")
 public class Role implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     @Id
-    @Column(name = "role_id", nullable = false)
+    @Column(name = "id", nullable = false)
     private int id;
 
-    @Column(name = "role_name", nullable = false)
+    @Column(name = "name", nullable = false)
     private String name;
 
     @ManyToMany(mappedBy = "roles")
