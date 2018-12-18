@@ -1,6 +1,7 @@
 package com.nckh.quanlynhahang.entities;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 @Table(name = "invoice")
@@ -17,6 +18,19 @@ public class Invoice {
     @JoinColumn(name = "id_employee", nullable = false)
     private User user;
 
+    @OneToMany(mappedBy = "invoice")
+    private Set<InvoiceDetails> invoiceDetails;
+
+
+
+
+    public Set<InvoiceDetails> getInvoiceDetails() {
+        return invoiceDetails;
+    }
+
+    public void setInvoiceDetails(Set<InvoiceDetails> invoiceDetails) {
+        this.invoiceDetails = invoiceDetails;
+    }
 
     public String getId() {
         return id;

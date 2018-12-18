@@ -18,12 +18,22 @@ public class Product {
     @JoinColumn(name = "id_category", nullable = false)
     private ProductCategory productCategory;
 
+    @Column(name = "quantity_buy")
+    private int quantityBuy;
 
     @OneToMany(mappedBy = "product")
     private Set<ProductDetails> productDetails;
 
 
 
+
+    public int getQuantityBuy() {
+        return quantityBuy;
+    }
+
+    public void setQuantityBuy(int quantityBuy) {
+        this.quantityBuy = quantityBuy;
+    }
 
     public Set<ProductDetails> getProductDetails() {
         return productDetails;
